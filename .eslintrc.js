@@ -1,3 +1,4 @@
+const isProductionENV = process.env.NODE_ENV === 'production';
 module.exports = {
     root: true,
     env: {
@@ -8,8 +9,8 @@ module.exports = {
         '@vue/standard'
     ],
     rules: {
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-console':  isProductionENV ? 'error' : 'off',
+        'no-debugger': isProductionENV ? 'error' : 'off',
         // // 强制4个空格缩进
         'indent': [2, 4, { 'SwitchCase': 1 }],
         // // 行尾必须有分号

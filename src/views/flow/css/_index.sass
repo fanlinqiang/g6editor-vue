@@ -1,0 +1,66 @@
+$layout-border-color: #e6e9ed
+$panel-backgroud-color: #fafafa
+.editor-wrapper
+    background-color: #ffffff
+    border: 1px solid $layout-border-color
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    overflow: hidden
+.layout-header
+    padding: 8px
+    border-bottom: 1px solid $layout-border-color
+    flex: 0 0 45px
+.layout-body
+    flex: auto
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+.layout-body-left
+    flex: 0 0 158px
+    background-color: $panel-backgroud-color
+.layout-body-center
+    flex: 4 1 auto
+    border: 1px solid $layout-border-color
+    border-width: 0px 1px
+    overflow: hidden
+    position: relative
+.draw-content
+    height: 100%
+    cursor: default
+    width: 100%
+    overflow: hidden
+.layout-body-right
+    flex: 0 0 158px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-height: 100%
+    overflow: hidden
+
+.detail-wrap
+    flex: 1 1 auto
+    background-color: $panel-backgroud-color
+    border-bottom: 1px solid $layout-border-color
+    display: flex
+    flex-direction: column
+    overflow-y: hidden
+.detail-container
+    flex: 1 1 auto
+    overflow-y: auto
+    @include beautiful-scrollbar
+.mini-map-wrap
+    flex: 0 0 261px
+    display: flex
+    flex-direction: column
+.mini-map-title, .detail-title
+    border-bottom: 1px solid $layout-border-color
+    padding-left: 10px
+    line-height: 36px
+.mini-map-container
+    flex: 0 0 224px
+
+
+
