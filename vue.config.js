@@ -1,4 +1,4 @@
-const publicPath = process.env.NODE_ENV === 'production' ? '././' : '/';
+const publicPath = process.env.NODE_ENV === 'production' ? '/g6editor-vue/' : '/';
 module.exports = {
     // 部署应用包时的基本 URL
     publicPath,
