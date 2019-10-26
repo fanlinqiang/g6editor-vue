@@ -16,6 +16,7 @@
             .mini-map-wrap
                 .mini-map-title 缩略图
                 .mini-map-container(ref="mini-map")
+                ZoomSlider(:graph="graph", v-if="graph")
 </template>
 <script>
 import _ from 'lodash';
@@ -26,11 +27,13 @@ import elementResizeDetectorMaker from 'element-resize-detector';
 import ItemPanel from './components/item-panel';
 import NodeContextMenu from '../behavior/node-contextmenu/index.vue';
 import DetailPanel from './components/detail-panel/index.vue';
+import ZoomSlider from './components/zoom-slider/index.vue';
 export default {
     components: {
         ItemPanel,
         NodeContextMenu,
-        DetailPanel
+        DetailPanel,
+        ZoomSlider
     },
     data () {
         return {
