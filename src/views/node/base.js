@@ -18,7 +18,6 @@ export default {
     draw (cfg, group) {
         const shape = this.drawShape(cfg, group);
         shape.set('className', this.itemType + CLS_SHAPE_SUFFIX);
-        console.log({ cfg, group });
         if (cfg.label) {
             const label = this.drawLabel(cfg, group);
             label.set('className', this.itemType + CLS_LABEL_SUFFIX);
@@ -100,7 +99,6 @@ export default {
         });
     },
     drawLabel (cfg, group) {
-        console.log({ cfg, group });
         const labelCfg = cfg.labelCfg || {};
         const labelStyle = this.getLabelStyle(cfg, labelCfg, group);
         const label = group.addShape('text', {
