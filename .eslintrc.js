@@ -9,7 +9,7 @@ module.exports = {
         '@vue/standard'
     ],
     rules: {
-        'no-console':  isProductionENV ? 'error' : 'off',
+        'no-console': isProductionENV ? 'error' : 'off',
         'no-debugger': isProductionENV ? 'error' : 'off',
         // // 强制4个空格缩进
         'indent': [2, 4, { 'SwitchCase': 1 }],
