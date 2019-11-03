@@ -1,7 +1,7 @@
 <template lang="pug">
 .editor-wrapper
     .layout-header
-        //Toolbar(:graph="graph", v-if="graph")
+        Toolbar(:graph="graph", v-if="graph")
     .layout-body
         .layout-body-left
             ItemPanel
@@ -28,12 +28,14 @@ import ItemPanel from './components/item-panel';
 import NodeContextMenu from '../behavior/node-contextmenu/index.vue';
 import DetailPanel from './components/detail-panel/index.vue';
 import ZoomSlider from './components/zoom-slider/index.vue';
+import Toolbar from './components/toolbar/index.vue';
 export default {
     components: {
         ItemPanel,
         NodeContextMenu,
         DetailPanel,
-        ZoomSlider
+        ZoomSlider,
+        Toolbar
     },
     data () {
         return {
